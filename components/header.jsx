@@ -1,8 +1,8 @@
 import { SignedOut, SignedIn, SignInButton, UserButton } from "@clerk/nextjs"
 import Image from "next/image"
-import MentoraLogo from '@/asset/mentora-icon.png'
+import MentoraLogo from '../asset/mentora-icon.png'
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button";
 import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarsIcon } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu"
 

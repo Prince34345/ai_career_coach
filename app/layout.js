@@ -1,11 +1,12 @@
 
 import {Inter} from 'next/font/google'
 import { ClerkProvider } from "@clerk/nextjs";
-import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import Header from '@/components/header';
+import {ThemeProvider} from '../components/theme-provider';
+import Header from '../components/header';
 import { dark, experimental__simple } from '@clerk/themes';
-import Footer from '@/components/footer';
+import Footer from '../components/footer';
+
+import "./globals.css";
 
 const inter = Inter({subsets: ["latin"]})
 
@@ -17,7 +18,7 @@ export  const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <ClerkProvider appearance={{baseTheme: experimental__simple}} >
+    <ClerkProvider appearance={{baseTheme: dark}} >
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className}`}
